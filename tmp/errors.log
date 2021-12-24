@@ -122,3 +122,31 @@
         Текст ошибки: syntax error, unexpected '}', expecting ',' or ';' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\MainController.php Строка: 12 
         
 ========================
+[2021-12-24 16:16:57] 
+        Текст ошибки: syntax error, unexpected '}' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 42 
+        
+========================
+[2021-12-24 16:17:18] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Main/
+        index.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 41 
+        
+========================
+[2021-12-24 16:18:02] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Main/
+        index.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 41 
+        
+========================
+[2021-12-24 16:18:38] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Main/
+        index.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 41 
+        
+========================
+[2021-12-24 16:20:00] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Main/
+        index.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 41 
+        
+========================
+[2021-12-24 16:45:01] 
+        Текст ошибки: Access to undeclared static property: app\controllers\App::$app | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\MainController.php Строка: 8 
+        
+========================

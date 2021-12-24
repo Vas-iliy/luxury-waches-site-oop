@@ -5,7 +5,8 @@ namespace app\controllers;
 class MainController extends App
 {
     public function indexAction() {
-        debug($this->route);
-        debug($this->controller);
+        $this->setMeta('Главная страница', 'fdfdfd', 'lalala');
+
+        $this->set(['name' => 'Vasiliy', 'age' => 22]);
     }
 }
