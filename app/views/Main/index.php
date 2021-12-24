@@ -1,4 +1,5 @@
 <h1>lskjdl</h1>
-<?=$name?>
-<?=$age?>
+<?foreach ($posts as $post):?>
+<p><?=$post['title']?></p>
+<?endforeach;?>
 

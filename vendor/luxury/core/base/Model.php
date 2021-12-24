@@ -2,6 +2,8 @@
 
 namespace luxury\base;
 
+use luxury\Db;
+
 abstract class Model
 {
     public $attributes = [];
@@ -10,7 +12,7 @@ abstract class Model
 
     public function __construct()
     {
-
+        Db::instance();
     }
 
 }

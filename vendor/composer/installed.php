@@ -19,5 +19,16 @@
             'reference' => NULL,
             'dev_requirement' => false,
         ),
+        'gabordemooij/redbean' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../gabordemooij/redbean',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'edee651d01a6b77ecf4cc16e3ac4b245a2c843a6',
+            'dev_requirement' => false,
+        ),
     ),
 );
