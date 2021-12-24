@@ -106,3 +106,19 @@
         Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 44 
         
 ========================
+[2021-12-24 15:40:21] 
+        Текст ошибки: Argument 1 passed to debug() must be of the type array, string given, called in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\MainController.php on line 11 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\libs\functions.php Строка: 3 
+        
+========================
+[2021-12-24 15:42:25] 
+        Текст ошибки: Argument 1 passed to debug() must be of the type array, string given, called in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\MainController.php on line 11 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\libs\functions.php Строка: 3 
+        
+========================
+[2021-12-24 15:42:26] 
+        Текст ошибки: Argument 1 passed to debug() must be of the type array, string given, called in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\MainController.php on line 11 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\libs\functions.php Строка: 3 
+        
+========================
+[2021-12-24 15:43:11] 
+        Текст ошибки: syntax error, unexpected '}', expecting ',' or ';' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\MainController.php Строка: 12 
+        
+========================

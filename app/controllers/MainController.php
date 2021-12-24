@@ -1,12 +1,11 @@
 <?php
 
-
 namespace app\controllers;
 
-
-class MainController
+class MainController extends App
 {
     public function indexAction() {
-        echo __METHOD__;
+        debug($this->route);
+        debug($this->controller);
     }
 }
