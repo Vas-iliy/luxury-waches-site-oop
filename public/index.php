@@ -5,4 +5,4 @@ require_once LIBS . '/functions.php';
 
 new \luxury\App();
 
-debug(\luxury\App::$app->getProperties());
+throw new Exception('Страница не найдена', 404);
