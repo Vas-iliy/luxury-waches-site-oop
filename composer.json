@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "luxury\\": "vendor/luxury",
+      "luxury\\": "vendor/luxury/core",
       "app\\": "app"
     }
   },
