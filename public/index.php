@@ -6,4 +6,3 @@ require_once CONFIG . '/routes.php';
 
 new \luxury\App();
 
-debug(\luxury\Router::getRoutes());

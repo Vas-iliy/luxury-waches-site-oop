@@ -58,3 +58,51 @@
         Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\public\index.php Строка: 8 
         
 ========================
+[2021-12-24 15:03:09] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 29 
+        
+========================
+[2021-12-24 15:19:07] 
+        Текст ошибки: Контроллер app\controllers\PerController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:19:43] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:20:26] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:20:27] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:20:48] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:22:09] 
+        Текст ошибки: Контроллер app\controllers\Controller не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:23:01] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:23:32] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 33 
+        
+========================
+[2021-12-24 15:26:32] 
+        Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 40 
+        
+========================
+[2021-12-24 15:27:42] 
+        Текст ошибки: Метод app\controllers\MainController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 35 
+        
+========================
+[2021-12-24 15:29:27] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 44 
+        
+========================
