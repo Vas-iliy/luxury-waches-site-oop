@@ -6,7 +6,7 @@ class Cache
 {
     use TSingleton;
 
-    public function set($key, $data, $sec = 3600) {
+    public function set($key, $data, $sec = 3600*24*365) {
         if ($sec) {
             $content['data'] = $data;
             $content['end_time'] = time() + $sec;
