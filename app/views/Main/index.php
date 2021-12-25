@@ -43,6 +43,7 @@
 <!--about-end-->
 <!--product-starts-->
 <?if($hits):?>
+<?$curr = \luxury\App::$app->getProperty('currency')?>
 <div class="product">
     <div class="container">
         <div class="product-top">
@@ -55,9 +56,9 @@
                             <h3><a href="product/<?=$hit->alias?>"><?=$hit->title?></a></h3>
                             <p>Explore Now</p>
                             <h4><a class="add-to-cart-link" href="cart/add?id=<?=$hit->id?>"><i></i></a>
-                                <span class=" item_price">$ <?=$hit->price?></span>
-                                <?if ($hit->old_price):?>
-                                    <small><del><?=$hit->old_price?></del></small>
+                                <span class=" item_price"><?=$curr['symbol']?> <?=$hit->price*$curr['value']?></span>
+                                <?if ($hit->old_price*$curr['value']):?>
+                                    <small><del><?=$hit->old_price*$curr['value']?></del></small>
                                 <?endif;?>
                             </h4>
                         </div>

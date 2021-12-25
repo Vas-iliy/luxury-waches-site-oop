@@ -23,7 +23,7 @@ class Currency
     }
 
     public static function getCurrencies() {
-        return \R::getAssoc("SELECT code, title, symbol_left, symbol_right, value, base
+        return \R::getAssoc("SELECT code, title, symbol, value, base
         FROM currency ORDER BY base DESC");
     }
 
