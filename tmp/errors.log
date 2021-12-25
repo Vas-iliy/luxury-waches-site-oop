@@ -426,3 +426,15 @@
         Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
         
 ========================
+[2021-12-25 11:02:40] 
+        Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'bace' in 'order clause' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2021-12-25 11:06:05] 
+        Текст ошибки: syntax error, unexpected ';', expecting ',' or ')' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\App.php Строка: 16 
+        
+========================
+[2021-12-25 11:16:21] 
+        Текст ошибки: Function name must be a string | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\currency\Currency.php Строка: 34 
+        
+========================
