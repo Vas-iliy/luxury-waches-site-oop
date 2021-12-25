@@ -7,18 +7,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-    <?=$this->getMeta()?>
+    <?=$this->getMeta();?>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
-
-    <!--Custom-Theme-files-->
+    <link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--theme-style-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-
 </head>
 <body>
 <!--top-header-->
@@ -29,7 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="drop">
                     <div class="box">
                         <select id="currency" tabindex="4" class="dropdown drop">
-                            <?new \app\widgets\currency\Currency();?>
+                            <?php new \app\widgets\currency\Currency(); ?>
                         </select>
                     </div>
                     <div class="box1">
@@ -69,10 +66,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container">
         <div class="header">
             <div class="col-md-9 header-left">
-                <div class="menu">
-                    <?new \app\widgets\menu\Menu([
-                        'tpl' => WWW . '/menu/menu.php'
-                    ])?>
+                <div class="menu-container">
+                    <div class="menu">
+                        <?php new \app\widgets\menu\Menu([
+                            'tpl' => WWW . '/menu/menu.php',
+                        ]); ?>
+                    </div>
                 </div>
                 <!--<div class="top-nav">
                     <ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
@@ -224,9 +223,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
 </div>
 <!--bottom-header-->
+
 <div class="content">
-    <?=$content?>
+    <?=$content;?>
 </div>
+
 <!--information-starts-->
 <div class="information">
     <div class="container">
@@ -294,7 +295,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/simpleCart.min.js"> </script>
 <script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>
+<!--dropdown-->
 <script src="js/jquery.easydropdown.js"></script>
+<!--Slider-Starts-Here-->
 <script src="js/responsiveslides.min.js"></script>
 <script>
     // You can also use "$(window).load(function() {"
@@ -316,6 +319,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     });
 </script>
+<script src="megamenu/js/megamenu.js"></script>
 <script src="js/main.js"></script>
+<!--End-slider-script-->
 </body>
 </html>
