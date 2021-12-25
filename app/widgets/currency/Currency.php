@@ -2,6 +2,8 @@
 
 namespace app\widgets\currency;
 
+use luxury\App;
+
 class Currency
 {
     protected $tpl;
@@ -10,12 +12,14 @@ class Currency
 
     public function __construct()
     {
-        $this->tpl = ROOT . '/currency_tpl/currency.php';
+        $this->tpl = __DIR__ . '/currency_tpl/currency.php';
         $this->run();
     }
 
     protected function run() {
-        $this->getHtml();
+        $this->currencies = App::$app->getProperty('currencies');
+        $this->currency = App::$app->getProperty('currency');
+        echo $this->getHtml();
     }
 
     public static function getCurrencies() {
@@ -24,8 +28,8 @@ class Currency
     }
 
     public static function getCurrency($currencies) {
-        if (isset($_COOKIE['currency']) && array_key_exists($_COOKIE['currency'], $currencies)) {
-            $key = $_COOKIE['currency'];
+        if (isset($_SESSION['currency']) && array_key_exists($_SESSION['currency'], $currencies)) {
+            $key = $_SESSION['currency'];
         }
         else {
             $key = key($currencies);
@@ -38,6 +42,8 @@ class Currency
     }
 
     protected function getHtml() {
-
+        ob_start();
+        require_once $this->tpl;
+        return ob_get_clean();
     }
 }
