@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Breadcrumbs;
 use app\models\Products;
 use luxury\App;
 
@@ -32,11 +33,12 @@ class ProductsController extends AppController
             $recentlyViewed = \R::find('products', 'id IN (' . \R::genSlots($viewed) .') LIMIT 3', $viewed);
         }
 
+        $breadcrumbs = Breadcrumbs::getBreadcrumbs($product->id_category, $product->title);
 
         $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
         $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
 
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product', 'curr', 'category', 'related', 'gallery', 'recentlyViewed'));
+        $this->set(compact('product', 'curr', 'category', 'related', 'gallery', 'recentlyViewed', 'breadcrumbs'));
     }
 }
