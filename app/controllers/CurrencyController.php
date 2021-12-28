@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-class CurrencyController extends App
+class CurrencyController extends AppController
 {
     public function changeAction() {
         $currency = !empty($_GET['curr']) ? $_GET['curr'] : null;

@@ -3,19 +3,19 @@
 namespace app\controllers;
 
 use app\widgets\currency\Currency;
+use luxury\App;
 use luxury\base\Controller;
 use app\models\AppModel;
 use luxury\Cache;
 
-class App extends Controller
+class AppController extends Controller
 {
     public function __construct($route)
     {
         parent::__construct($route);
         new AppModel();
-        \luxury\App::$app->setProperty('currencies', Currency::getCurrencies());
-        \luxury\App::$app->setProperty('currency', Currency::getCurrency(
-            \luxury\App::$app->getProperty('currencies')));
+        App::$app->setProperty('currencies', Currency::getCurrencies());
+        App::$app->setProperty('currency', Currency::getCurrency(App::$app->getProperty('currencies')));
         self::cacheCategory();
     }
 
