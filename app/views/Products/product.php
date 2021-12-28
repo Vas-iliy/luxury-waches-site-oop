@@ -153,6 +153,35 @@
                     </div>
                 </div>
                 <?endif;?>
+                <?if($recentlyViewed):?>
+                    <div class="latestproducts">
+                        <div class="product-one">
+                            <h3>Недавно просмотренные</h3>
+                            <?foreach ($recentlyViewed as $item):?>
+                                <div class="col-md-4 product-left p-left">
+                                    <div class="product-main simpleCart_shelfItem">
+                                        <a href="product/<?=$item['alias']?>" class="mask"><img class="img-responsive zoom-img" src="images/<?=$item['img']?>" alt="" /></a>
+                                        <div class="product-bottom">
+                                            <h3><a href="product/<?=$item['alias']?>"><?=$item['title']?></a></h3>
+                                            <p>Explore Now</p>
+                                            <h4><a class="item_add add-to-cart-link" href="cart/add?id=<?=$item['id']?>"><i></i></a>
+                                                <span class=" item_price"><?=$curr['symbol']?> <?=$item['price']*$curr['value']?></span></h4>
+                                            <?if ($item['old_price']*$curr['value']):?>
+                                                <del><?=$item['old_price']*$curr['value']?></del>
+                                            <?endif;?>
+                                        </div>
+                                        <?if($item['old_price']):?>
+                                            <div class="srch">
+                                                <span>-<?=(100-$item['price']*100/$item['old_price'])?>%</span>
+                                            </div>
+                                        <?endif;?>
+                                    </div>
+                                </div>
+                            <?endforeach;?>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                <?endif;?>
             </div>
             <div class="col-md-3 single-right">
                 <div class="w_sidebar">

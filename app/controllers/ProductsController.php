@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Products;
 use luxury\App;
 
 class ProductsController extends AppController
@@ -23,10 +24,19 @@ class ProductsController extends AppController
         $curr = App::$app->getProperty('currency');
         $category = App::$app->getProperty('categories');
 
-        $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ?", [$product->id]);
+        $p_model = new Products();
+        $p_model->setRecentlyViewed($product->id);
+        $viewed = $p_model->getRecentlyViewed();
+        $recentlyViewed = null;
+        if ($viewed) {
+            $recentlyViewed = \R::find('products', 'id IN (' . \R::genSlots($viewed) .') LIMIT 3', $viewed);
+        }
+
+
+        $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
         $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
 
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product', 'curr', 'category', 'related', 'gallery'));
+        $this->set(compact('product', 'curr', 'category', 'related', 'gallery', 'recentlyViewed'));
     }
 }
