@@ -38,7 +38,10 @@ class ProductsController extends AppController
         $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
         $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
 
+        $mods = \R::findAll('modifications', 'id_product = ?', [$product->id]);
+
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product', 'curr', 'category', 'related', 'gallery', 'recentlyViewed', 'breadcrumbs'));
+        $this->set(compact('product', 'curr', 'category', 'related', 'gallery', 'recentlyViewed',
+            'breadcrumbs', 'mods'));
     }
 }
