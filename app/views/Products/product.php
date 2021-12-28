@@ -124,50 +124,35 @@
                         </li>
                     </ul>
                 </div>
+                <?if($related):?>
                 <div class="latestproducts">
                     <div class="product-one">
+                        <h3>С этим товаром также покупают</h3>
+                        <?foreach ($related as $item):?>
                         <div class="col-md-4 product-left p-left">
                             <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-1.png" alt="" /></a>
+                                <a href="product/<?=$item['alias']?>" class="mask"><img class="img-responsive zoom-img" src="images/<?=$item['img']?>" alt="" /></a>
                                 <div class="product-bottom">
-                                    <h3>Smart Watches</h3>
+                                    <h3><a href="product/<?=$item['alias']?>"><?=$item['title']?></a></h3>
                                     <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+                                    <h4><a class="item_add add-to-cart-link" href="cart/add?id=<?=$item['id']?>"><i></i></a>
+                                        <span class=" item_price"><?=$curr['symbol']?> <?=$item['price']*$curr['value']?></span></h4>
+                                    <?if ($item['old_price']*$curr['value']):?>
+                                        <del><?=$item['old_price']*$curr['value']?></del>
+                                    <?endif;?>
                                 </div>
-                                <div class="srch">
-                                    <span>-50%</span>
-                                </div>
+                                <?if($item['old_price']):?>
+                                    <div class="srch">
+                                        <span>-<?=(100-$item['price']*100/$item['old_price'])?>%</span>
+                                    </div>
+                                <?endif;?>
                             </div>
                         </div>
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-2.png" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>Smart Watches</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-                                </div>
-                                <div class="srch">
-                                    <span>-50%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-3.png" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>Smart Watches</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-                                </div>
-                                <div class="srch">
-                                    <span>-50%</span>
-                                </div>
-                            </div>
-                        </div>
+                        <?endforeach;?>
                         <div class="clearfix"></div>
                     </div>
                 </div>
+                <?endif;?>
             </div>
             <div class="col-md-3 single-right">
                 <div class="w_sidebar">
