@@ -24,8 +24,9 @@ class ProductsController extends AppController
         $category = App::$app->getProperty('categories');
 
         $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ?", [$product->id]);
+        $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
 
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product', 'curr', 'category', 'related'));
+        $this->set(compact('product', 'curr', 'category', 'related', 'gallery'));
     }
 }

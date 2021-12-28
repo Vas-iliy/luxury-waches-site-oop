@@ -17,19 +17,19 @@
             <div class="col-md-9 single-main-left">
                 <div class="sngl-top">
                     <div class="col-md-5 single-top-left">
+                        <?if($gallery):?>
                         <div class="flexslider">
                             <ul class="slides">
-                                <li data-thumb="images/s-1.jpg">
-                                    <div class="thumb-image"> <img src="images/s-1.jpg" data-imagezoom="true" class="img-responsive" alt=""/> </div>
+                                <?foreach ($gallery as $value):?>
+                                <li data-thumb="images/<?=$value->img?>">
+                                    <div class="thumb-image"> <img src="images/<?=$value->img?>" data-imagezoom="true" class="img-responsive" alt=""/> </div>
                                 </li>
-                                <li data-thumb="images/s-2.jpg">
-                                    <div class="thumb-image"> <img src="images/s-2.jpg" data-imagezoom="true" class="img-responsive" alt=""/> </div>
-                                </li>
-                                <li data-thumb="images/s-3.jpg">
-                                    <div class="thumb-image"> <img src="images/s-3.jpg" data-imagezoom="true" class="img-responsive" alt=""/> </div>
-                                </li>
+                                <?endforeach;?>
                             </ul>
                         </div>
+                        <?else:?>
+                            <img src="images/<?=$product->img?>" alt="">
+                        <?endif;?>
                         <!-- FlexSlider -->
 
                     </div>
