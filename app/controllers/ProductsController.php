@@ -2,15 +2,16 @@
 
 namespace app\controllers;
 
-use luxury\Cache;
+use luxury\App;
 
 class ProductsController extends AppController
 {
     public function indexAction() {
         $brands = \R::find('brands', 'LIMIT 3');
         $hits = \R::find('products', "hit = '1' AND status = '1' LIMIT 8");
+        $curr = App::$app->getProperty('currency');
         $this->setMeta('Главная страница');
-        $this->set(compact('brands', 'hits'));
+        $this->set(compact('brands', 'hits', 'curr'));
     }
 
     public function productAction() {
@@ -19,7 +20,10 @@ class ProductsController extends AppController
         if (!$product) {
             throw new \Exception('Страница не найдена', 404);
         }
+        $curr = App::$app->getProperty('currency');
+        $category = App::$app->getProperty('categories');
+        
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product'));
+        $this->set(compact('product', 'curr', 'category'));
     }
 }

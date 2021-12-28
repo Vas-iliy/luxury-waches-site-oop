@@ -43,7 +43,6 @@
 <!--about-end-->
 <!--product-starts-->
 <?if($hits):?>
-<?$curr = \luxury\App::$app->getProperty('currency')?>
 <div class="product">
     <div class="container">
         <div class="product-top">

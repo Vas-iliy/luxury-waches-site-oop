@@ -774,3 +774,7 @@
         Текст ошибки: syntax error, unexpected '}' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 21 
         
 ========================
+[2021-12-28 10:24:04] 
+        Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 42 
+        
+========================

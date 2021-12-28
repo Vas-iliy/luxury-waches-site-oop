@@ -16,7 +16,7 @@ class AppController extends Controller
         new AppModel();
         App::$app->setProperty('currencies', Currency::getCurrencies());
         App::$app->setProperty('currency', Currency::getCurrency(App::$app->getProperty('currencies')));
-        self::cacheCategory();
+        App::$app->setProperty('categories', self::cacheCategory());
     }
 
     public static function cacheCategory() {
