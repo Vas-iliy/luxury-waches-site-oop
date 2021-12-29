@@ -24,7 +24,7 @@ class AppController extends Controller
         $categories = $cache->get('categories');
         if (!$categories) {
             $categories = \R::getAssoc('SELECT * FROM categories');
-            $cache->set('categories', $categories);
+            $cache->set('categories', $categories, 3600*24);
         }
         return $categories;
     }

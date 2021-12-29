@@ -15,7 +15,7 @@ class Menu
     protected $class = 'menu';
     protected $table = 'categories';
     protected $attrs = [];
-    protected $cache = 3600;
+    protected $cache = 3600*12;
     protected $cacheKey = 'luxury_menu';
     protected  $prepend = '';
 

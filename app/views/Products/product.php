@@ -61,7 +61,7 @@
                                         <select>
                                             <option >Выбрать цвет</option>
                                             <?foreach ($mods as $mod):?>
-                                            <option data-title="<?=$mod->title?>" data-price="<?=$mod->price*$curr['value']?>" value="<?$mod->id?>"><?=$mod->title?></option>
+                                            <option data-title="<?=$mod->title?>" data-price="<?=$mod->price*$curr['value']?>" value="<?=$mod->id?>"><?=$mod->title?></option>
                                             <?endforeach;?>
                                         </select>
                                     </li>
@@ -82,7 +82,7 @@
                             </ul>
                             <div class="quantity">
                                 <input type="number" size="4"value="1" name="quantity" min="1" step="1">
-                                <a id="productAdd" href="cart/add?id=<?=$product->id?>" class="add-cart item_add add-to-cart-link">ADD TO CART</a>
+                                <a id="productAdd" href="cart/add?id=<?=$product->id?>" data-id="<?=$product->id?>" class="add-cart item_add add-to-cart-link">ADD TO CART</a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                                 <div class="product-bottom">
                                     <h3><a href="product/<?=$item['alias']?>"><?=$item['title']?></a></h3>
                                     <p>Explore Now</p>
-                                    <h4><a class="item_add add-to-cart-link" href="cart/add?id=<?=$item['id']?>"><i></i></a>
+                                    <h4><a class="item_add add-to-cart-link" data-id="<?=$item->id?>" href="cart/add?id=<?=$item['id']?>"><i></i></a>
                                         <span class=" item_price"><?=$curr['symbol']?> <?=$item['price']*$curr['value']?></span></h4>
                                     <?if ($item['old_price']*$curr['value']):?>
                                         <del><?=$item['old_price']*$curr['value']?></del>
@@ -165,7 +165,7 @@
                                         <div class="product-bottom">
                                             <h3><a href="product/<?=$item['alias']?>"><?=$item['title']?></a></h3>
                                             <p>Explore Now</p>
-                                            <h4><a class="item_add add-to-cart-link" href="cart/add?id=<?=$item['id']?>"><i></i></a>
+                                            <h4><a class="item_add add-to-cart-link" data-id="<?=$item->id?>" href="cart/add?id=<?=$item['id']?>"><i></i></a>
                                                 <span class=" item_price"><?=$curr['symbol']?> <?=$item['price']*$curr['value']?></span></h4>
                                             <?if ($item['old_price']*$curr['value']):?>
                                                 <del><?=$item['old_price']*$curr['value']?></del>
