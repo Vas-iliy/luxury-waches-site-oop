@@ -22,11 +22,11 @@
             <?endforeach;?>
             <tr>
                 <td>Итого:</td>
-                <td colspan="4" class="text-right cert-qty"><?=$_SESSION['cart.qty']?></td>
+                <td colspan="4" class="text-right cart-qty"><?=$_SESSION['cart.qty']?></td>
             </tr>
             <tr>
                 <td>На сумму:</td>
-                <td colspan="4" class="text-right cert-sum"><?=\luxury\App::$app->getProperty('currency')['symbol'] .$_SESSION['cart.sum']?></td>
+                <td colspan="4" class="text-right cart-sum"><?=\luxury\App::$app->getProperty('currency')['symbol'] .$_SESSION['cart.sum']?></td>
             </tr>
             </tbody>
         </table>

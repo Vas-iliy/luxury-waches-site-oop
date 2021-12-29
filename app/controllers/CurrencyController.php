@@ -2,18 +2,24 @@
 
 namespace app\controllers;
 
+use app\models\Cart;
+use app\widgets\currency\Currency;
+use luxury\App;
+
 class CurrencyController extends AppController
 {
     public function changeAction() {
         $currency = !empty($_GET['curr']) ? $_GET['curr'] : null;
         if ($currency) {
-            $curr = \luxury\App::$app->getProperty('currency');
+            $curr = \R::findOne('currency', 'code=?', [$currency]);
 
             if (!empty($curr)) {
                 $_SESSION['currency'] = $currency;
+                Cart::recalc($curr);
             }
         }
         redirect();
+
     }
 
 }

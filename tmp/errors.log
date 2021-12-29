@@ -822,3 +822,11 @@
         Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
         
 ========================
+[2021-12-29 12:32:30] 
+        Текст ошибки: Too few arguments to function app\models\Cart::recalc(), 0 passed in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\views\layouts\watches.php on line 104 and exactly 1 expected | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Cart.php Строка: 48 
+        
+========================
+[2021-12-29 13:29:24] 
+        Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 42 
+        
+========================

@@ -44,13 +44,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-md-6 top-header-left">
                 <div class="cart box_1">
-                    <a href="checkout.html">
+                    <a href="cart/show" onclick="getCart(); return false;" >
+                        <div class="total">
+                            <img src="images/cart-1.png" alt="" />
+                            <?if(!empty($_SESSION['cart'])):?>
+                                <span class="simpleCart_total"><?=\luxury\App::$app->getProperty('currency')['symbol'] . $_SESSION['cart.sum']?></span>
+                            <?else:?>
+                                <span class="simpleCart_total">Empty Cart</span>
+                            <?endif;?>
+                        </div>
+                    </a>
+                    <!--<a href="checkout.html">
                         <div class="total">
                             <span class="simpleCart_total"></span></div>
                         <img src="images/cart-1.png" alt="" />
                     </a>
                     <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                    <div class="clearfix"> </div>
+                    --><div class="clearfix"> </div>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -90,6 +100,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--bottom-header-->
 
 <div class="content">
+    <?debug($_SESSION)?>
     <?=$content;?>
 </div>
 
