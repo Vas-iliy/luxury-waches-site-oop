@@ -22,8 +22,12 @@ class ProductsController extends AppController
         if (!$product) {
             throw new \Exception('Страница не найдена', 404);
         }
+        $breadcrumbs = Products::getBreadcrumbs($product->id_category, $product->title);
+        $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
+        $mods = \R::findAll('modifications', 'id_product = ?', [$product->id]);
         $curr = App::$app->getProperty('currency');
         $category = App::$app->getProperty('categories');
+        $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
 
         $p_model = new Products();
         $p_model->setRecentlyViewed($product->id);
@@ -33,15 +37,7 @@ class ProductsController extends AppController
             $recentlyViewed = \R::find('products', 'id IN (' . \R::genSlots($viewed) .') LIMIT 3', $viewed);
         }
 
-        $breadcrumbs = Breadcrumbs::getBreadcrumbs($product->id_category, $product->title);
-
-        $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
-        $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
-
-        $mods = \R::findAll('modifications', 'id_product = ?', [$product->id]);
-
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product', 'curr', 'category', 'related', 'gallery', 'recentlyViewed',
-            'breadcrumbs', 'mods'));
+        $this->set(compact('product','breadcrumbs','gallery','mods','curr','category', 'related','recentlyViewed'));
     }
 }

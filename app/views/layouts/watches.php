@@ -100,7 +100,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--bottom-header-->
 
 <div class="content">
-    <?debug($_SESSION)?>
     <?=$content;?>
 </div>
 
