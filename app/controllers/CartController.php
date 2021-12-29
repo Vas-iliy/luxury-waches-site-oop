@@ -4,6 +4,8 @@
 namespace app\controllers;
 
 
+use app\models\Cart;
+
 class CartController extends AppController
 {
     public function addAction() {
@@ -21,6 +23,11 @@ class CartController extends AppController
                 $mod = \R::findOne('modifications', 'id=? AND id_product=?', [$mod_id, $id]);
             }
         }
-        die();
+        $cart = new Cart();
+        $cart->addToCart($product, $qty, $mod);
+        if ($this->isAjax()) {
+            $this->loadView('cart_modal');
+        }
+        redirect();
     }
 }
