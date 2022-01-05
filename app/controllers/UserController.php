@@ -13,6 +13,7 @@ class UserController extends AppController
             $user->load($data);
             if (!$user->validate($data) || !$user->checkUnique()) {
                 $user->getErrors();
+                $this->set(compact('data'));
             }
             else {
                 $user->attributes['password'] = password_hash($user->attributes['password'], PASSWORD_DEFAULT);
@@ -22,8 +23,8 @@ class UserController extends AppController
                 else {
                     $_SESSION['error'] = 'Ошибка';
                 }
+                redirect();
             }
-            redirect();
         }
         $this->setMeta('Регистрация');
     }
