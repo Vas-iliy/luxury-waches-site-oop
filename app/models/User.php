@@ -13,4 +13,21 @@ class User extends AppModel
         'email' => '',
         'address' => '',
     ];
+
+    public $rules = [
+      'required' => [
+          ['login'],
+          ['password'],
+          ['name'],
+          ['email'],
+          ['login'],
+          ['address']
+      ]  ,
+        'email' => [
+            ['email']
+        ],
+        'lengthMin' => [
+            ['password', 6]
+        ]
+    ];
 }
