@@ -22,7 +22,7 @@ class ProductsController extends AppController
         if (!$product) {
             throw new \Exception('Страница не найдена', 404);
         }
-        $breadcrumbs = Products::getBreadcrumbs($product->id_category, $product->title);
+        $breadcrumbs = Breadcrumbs::getBreadcrumbs($product->id_category, $product->title);
         $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
         $mods = \R::findAll('modifications', 'id_product = ?', [$product->id]);
         $curr = App::$app->getProperty('currency');
