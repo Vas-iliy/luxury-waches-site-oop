@@ -37,6 +37,12 @@
                             </div>
                         <?php endforeach; ?>
                         <div class="clearfix"></div>
+                        <div class="text-center">
+                            <?if ($pagination->countPages > 1):?>
+                            <?=$pagination?>
+                            <?endif;?>
+
+                        </div>
                     </div>
                 <?else:?>
                 <h3>Эта категория пуста</h3>

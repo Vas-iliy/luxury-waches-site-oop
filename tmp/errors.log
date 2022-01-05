@@ -918,3 +918,7 @@
         Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Category/category.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
         
 ========================
+[2022-01-05 16:23:05] 
+        Текст ошибки: syntax error, unexpected '$breadcrumbs' (T_VARIABLE), expecting ',' or ';' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 24 
+        
+========================
