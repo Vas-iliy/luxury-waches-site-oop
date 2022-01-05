@@ -14,3 +14,7 @@ function redirect($http = false) {
     header('Location:' . $redirect);
     die();
 }
+
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES);
+}
