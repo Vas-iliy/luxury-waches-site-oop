@@ -838,3 +838,59 @@
         Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 42 
         
 ========================
+[2021-12-29 16:17:19] 
+        Текст ошибки: Контроллер app\controllers\SearchController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 42 
+        
+========================
+[2021-12-29 16:23:40] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2021-12-29 16:25:25] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2021-12-29 16:28:49] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2021-12-29 16:33:13] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2021-12-29 16:37:28] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2021-12-29 16:47:24] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2021-12-29 16:49:28] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Search/typeahead.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-05 14:10:03] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-05 14:14:15] 
+        Текст ошибки: Метод app\controllers\SearchController::typeaheadAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-05 14:14:23] 
+        Текст ошибки: Метод app\controllers\SearchController::typeaheadAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-05 14:14:36] 
+        Текст ошибки: Метод app\controllers\SearchController::typeaheadAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-05 14:22:15] 
+        Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 42 
+        
+========================
+[2022-01-05 14:22:33] 
+        Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
