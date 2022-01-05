@@ -3,6 +3,7 @@
 use luxury\Router;
 
 Router::add('^product/(?P<alias>[a-z0-9-]+)/?$', ['controller' => 'Products', 'action' => 'product']);
+Router::add('^category/(?P<alias>[a-z0-9-]+)/?$', ['controller' => 'Category', 'action' => 'category']);
 
 
 

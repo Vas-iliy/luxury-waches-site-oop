@@ -894,3 +894,27 @@
         Текст ошибки: Метод app\controllers\SearchController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
         
 ========================
+[2022-01-05 14:49:37] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-05 14:49:53] 
+        Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 42 
+        
+========================
+[2022-01-05 14:57:30] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Category/category.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-05 15:02:24] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Category/category.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-05 15:10:37] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Category/category.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-05 15:18:10] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Category/category.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
