@@ -46,8 +46,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </span>
                         </a>
                         <ul class="dropdown-menu">
-                            <?if(!empty($_SESSION['user'])):?>
-                            <li><a href="#">Добро пожаловать, <?=h($_SESSION['user']['name'])?></a></li>
+                            <?if(!empty($_SESSION['token']) || !empty($_COOKIE['token'])):?>
+                            <li><a href="#">Добро пожаловать, <?=\app\models\User::getUser()['name']?></a></li>
                             <li><a href="user/logout">Выход</a></li>
                             <?else:?>
                             <li><a href="user/login">Вход</a></li>
@@ -76,7 +76,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <img src="images/cart-1.png" alt="" />
                     </a>
                     <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                    --><div class="clearfix"> </div>
+                    -->
+                    <div class="clearfix"> </div>
                 </div>
             </div>
             <div class="clearfix"></div>
