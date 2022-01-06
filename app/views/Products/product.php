@@ -29,8 +29,6 @@
                         <?else:?>
                             <img src="images/<?=$product->img?>" alt="">
                         <?endif;?>
-                        <!-- FlexSlider -->
-
                     </div>
                     <div class="col-md-7 single-top-right">
                         <div class="single-para simpleCart_shelfItem">
@@ -59,21 +57,22 @@
                             <div class="available">
                                 <ul>
                                     <li>Color
-                                        <select>
+                                        <select class="color">
                                             <option >Выбрать цвет</option>
                                             <?foreach ($mods as $mod):?>
-                                            <option data-title="<?=$mod->title?>" data-price="<?=$mod->price*$curr['value']?>" value="<?=$mod->id?>"><?=$mod->title?></option>
+                                            <option data-price="<?=$mod->price*$curr['value']?>" value="<?=$mod->id?>"><?=$mod->title?></option>
                                             <?endforeach;?>
                                         </select>
                                     </li>
-                                    <!--<li class="size-in">Size<select>
-                                            <option>Large</option>
-                                            <option>Medium</option>
-                                            <option>small</option>
-                                            <option>Large</option>
-                                            <option>small</option>
+                                    <?if(!empty($size)):?>
+                                    <li class="size-in">Size
+                                        <select class="size">
+                                            <?foreach ($size as $item):?>
+                                            <option data-size="<?=$item['proc']?>" value="<?=$item['id']?>"><?=$item['title']?></option>
+                                            <?endforeach;?>
                                         </select>
-                                        </li>-->
+                                    </li>
+                                    <?endif;?>
                                     <div class="clearfix"> </div>
                                 </ul>
                             </div>

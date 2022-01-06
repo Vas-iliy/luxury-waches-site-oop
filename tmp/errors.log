@@ -938,3 +938,15 @@
         Текст ошибки: syntax error, unexpected '?>', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\views\layouts\watches.php Строка: 50 
         
 ========================
+[2022-01-06 13:08:55] 
+        Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'project_luxury_oop.prosucts' doesn't exist | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 13:25:50] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT products ON size_product.id_product=products.id WHERE products.id = 1' at line 2 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 15:38:05] 
+        Текст ошибки: Call to undefined function session_desroy() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\views\layouts\watches.php Строка: 125 
+        
+========================

@@ -8,7 +8,7 @@ use luxury\App;
 
 class Cart extends AppModel
 {
-    public function addToCart($product, $qty = 1, $mod = null) {
+    public function addToCart($product, $qty = 1, $mod = null, $size = null) {
         if ($mod) {
             $id = "{$product->id}-{$mod->id}";
             $title = "{$product->title} ({$mod->title})";
@@ -19,13 +19,18 @@ class Cart extends AppModel
             $title = $product->title;
             $price = $product->price;
         }
-        if (isset($_SESSION['cart'][$id])) {
+        if ($size) {
+            $price = $price*$size['proc'];
+            $id = $id . '-' . $size['id'];
+        }
+        if (isset($_SESSION['cart'][$id]) && isset($_SESSION['cart'][$id]['size'])) {
             $_SESSION['cart'][$id]['qty'] += $qty;
         }
         else {
             $_SESSION['cart'][$id] = [
                 'qty' => $qty,
                 'title' => $title,
+                'size' => $size ? $size['title'] : 'Standart',
                 'alias' => $product->alias,
                 'price' => $price*App::$app->getProperty('currency')['value'],
                 'img' => $product->img

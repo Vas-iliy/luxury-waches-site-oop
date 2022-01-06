@@ -70,13 +70,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <?endif;?>
                         </div>
                     </a>
-                    <!--<a href="checkout.html">
-                        <div class="total">
-                            <span class="simpleCart_total"></span></div>
-                        <img src="images/cart-1.png" alt="" />
-                    </a>
-                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                    -->
                     <div class="clearfix"> </div>
                 </div>
             </div>
@@ -84,13 +77,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
-<!--top-header-->
-<!--start-logo-->
 <div class="logo">
     <a href="<?=PATH?>"><h1>Luxury Watches</h1></a>
 </div>
-<!--start-logo-->
-<!--bottom-header-->
 <div class="header-bottom">
     <div class="container">
         <div class="header">
@@ -110,16 +99,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <input type="text" class="typeahead" id="typeahead" name="s">
                         <input type="submit" value="">
                     </form>
-                    <!--<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                    <input type="submit" value="">-->
                 </div>
             </div>
             <div class="clearfix"> </div>
         </div>
     </div>
 </div>
-<!--bottom-header-->
-
 <div class="content">
     <div class="container">
         <div class="row">
@@ -137,10 +122,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
     </div>
+    <?debug($_SESSION)?>
     <?=$content;?>
 </div>
-
-<!--information-starts-->
 <div class="information">
     <div class="container">
         <div class="infor-top">
@@ -222,7 +206,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<!--footer-end-->
 <?$curr = \luxury\App::$app->getProperty('currency')?>
 <script>
     var path = '<?=PATH?>',

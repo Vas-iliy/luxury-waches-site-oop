@@ -12,7 +12,9 @@ class CartController extends AppController
         $id = !empty($_GET['id']) ? (int)$_GET['id'] : null;
         $qty = !empty($_GET['qty']) ? (int)$_GET['qty'] : null;
         $mod_id = !empty($_GET['mod']) ? (int)$_GET['mod'] : null;
+        $size_id = !empty($_GET['size']) ? (int)$_GET['size'] : null;
         $mod = null;
+        $size = null;
 
         if ($id) {
             $product = \R::findOne('products', 'id=?', [$id]);
@@ -22,9 +24,12 @@ class CartController extends AppController
             if ($mod_id) {
                 $mod = \R::findOne('modifications', 'id=? AND id_product=?', [$mod_id, $id]);
             }
+            if ($size_id) {
+                $size = \R::findOne('size', 'id=?', [$size_id]);
+            }
         }
         $cart = new Cart();
-        $cart->addToCart($product, $qty, $mod);
+        $cart->addToCart($product, $qty, $mod, $size);
         if ($this->isAjax()) {
             $this->loadView('cart_modal');
         }

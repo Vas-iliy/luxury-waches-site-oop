@@ -25,6 +25,8 @@ class ProductsController extends AppController
         $breadcrumbs = Breadcrumbs::getBreadcrumbs($product->id_category, $product->title);
         $gallery = \R::findAll('gallery', 'id_product = ?', [$product->id]);
         $mods = \R::findAll('modifications', 'id_product = ?', [$product->id]);
+        $size = \R::getAll("SELECT size.* FROM size JOIN size_product ON size.id=size_product.id_size 
+JOIN products ON size_product.id_product=products.id WHERE products.id = $product->id");
         $curr = App::$app->getProperty('currency');
         $category = App::$app->getProperty('categories');
         $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
@@ -38,6 +40,6 @@ class ProductsController extends AppController
         }
 
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product','breadcrumbs','gallery','mods','curr','category', 'related','recentlyViewed'));
+        $this->set(compact('product','breadcrumbs','gallery','mods', 'size','curr','category', 'related','recentlyViewed'));
     }
 }

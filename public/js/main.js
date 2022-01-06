@@ -3,14 +3,33 @@ $('#currency').change(function () {
 })
 
 $('.available select').on('change', function () {
-    var modId = $(this).val(),
-        color = $(this).find('option').filter(':selected').data('title'),
-        price = $(this).find('option').filter(':selected').data('price'),
+    var price = $(this).find('option').filter(':selected').data('price'),
+        priceSize = $(this).find('option').filter(':selected').data('size'),
         basePrice = $('#base-price').data('base');
     if (price) {
-        $('#base-price').text(symbol+ ' ' + price);
-    } else {
-        $('#base-price').text(symbol+ ' ' + basePrice);
+        $('.available select').data('price', price);
+        if ($('.available select').data('priceSize')) {
+            $('#base-price').text(symbol+ ' ' + price*$('.available select').data('priceSize'));
+        }
+        else {
+            $('#base-price').text(symbol+ ' ' + price);
+        }
+    }
+    else if (priceSize) {
+        $('.available select').data('priceSize', priceSize);
+        if ($('.available select').data('price')) {
+            $('#base-price').text(symbol+ ' ' + priceSize*$('.available select').data('price'));
+        } else {
+            $('#base-price').text(symbol+ ' ' + priceSize*basePrice);
+        }
+    }
+    else {
+        if ($('.available select').data('priceSize')) {
+            $('#base-price').text(symbol+ ' ' + basePrice*$('.available select').data('priceSize'));
+        }
+        else  {
+            $('#base-price').text(symbol+ ' ' + basePrice);
+        }
     }
 
 })
@@ -20,10 +39,11 @@ $('body').on('click', '.add-to-cart-link', function (e) {
     e.preventDefault();
     var id = $(this).data('id'),
         qty = $('.quantity input').val() ? $('.quantity input').val() : 1,
-        mod = $('.available select ').val();
+        mod = $('.available select.color').val(),
+        size = $('.available select.size').val();
     $.ajax({
         url: 'cart/add',
-        data: {id: id, qty: qty, mod: mod},
+        data: {id: id, qty: qty, mod: mod, size: size},
         type: 'GET',
         success: function (res) {
             showCart(res);
