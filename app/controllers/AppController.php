@@ -20,6 +20,7 @@ class AppController extends Controller
         App::$app->setProperty('currency', Currency::getCurrency(App::$app->getProperty('currencies')));
         App::$app->setProperty('categories', self::cacheCategory());
         $this->user = User::getUser();
+        debug($this->user);
     }
 
     public static function cacheCategory() {

@@ -5,6 +5,8 @@ namespace app\controllers;
 
 
 use app\models\Cart;
+use app\models\Order;
+use luxury\App;
 
 class CartController extends AppController
 {
@@ -58,6 +60,28 @@ class CartController extends AppController
         unset($_SESSION['cart.sum']);
         if ($this->isAjax()) {
             $this->loadView('cart_modal');
+        }
+        redirect();
+    }
+
+    public function viewAction() {
+        if (!$this->user) {
+            $_SESSION['success'] = 'Чтобы заказать товар сначала авторизуйтесь';
+            redirect(PATH . "/user/login");
+        }
+
+        $curr = App::$app->getProperty('currency');
+
+        $this->setMeta('Корзина');
+        $this->set(compact('curr'));
+    }
+
+    public function checkoutAction() {
+        if (!empty($_POST)) {
+            $data['id_user'] = $this->user['id'];
+            $data['note'] = !empty($_POST['note']) ? h(trim($_POST['note'])) : '';
+            $idOrder = Order::saveOrder($data);
+            Order::mailOrder($idOrder, $this->user['email']);
         }
         redirect();
     }

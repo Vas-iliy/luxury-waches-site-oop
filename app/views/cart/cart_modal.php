@@ -14,8 +14,8 @@
             <tbody>
             <?foreach ($_SESSION['cart'] as $id => $item):?>
             <tr>
-                <td><a href="products/<?=$item['alias']?>"><img src="images/<?=$item['img']?>" alt=""></a></td>
-                <td><a href="products/<?=$item['alias']?>"><?=$item['title']?></a></td>
+                <td><a href="product/<?=$item['alias']?>"><img src="images/<?=$item['img']?>" alt=""></a></td>
+                <td><a href="product/<?=$item['alias']?>"><?=$item['title']?></a></td>
                 <td><?=$item['size']?></td>
                 <td><?=$item['qty']?></td>
                 <td><?=$item['price']?></td>

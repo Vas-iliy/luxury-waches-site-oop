@@ -88,7 +88,11 @@ class User extends AppModel
                 setcookie('token', '', time() - 1);
             }
         }
-
         return $user;
+    }
+
+    public function isAdmin() {
+        $user = self::getUser();
+        return (isset($user) && $user['role'] === 'admin');
     }
 }
