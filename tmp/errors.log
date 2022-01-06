@@ -962,3 +962,47 @@
         Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
         
 ========================
+[2022-01-06 18:07:57] 
+        Текст ошибки: Using $this when not in object context | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php Строка: 11 
+        
+========================
+[2022-01-06 18:08:38] 
+        Текст ошибки: Using $this when not in object context | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php Строка: 12 
+        
+========================
+[2022-01-06 18:16:11] 
+        Текст ошибки: Using $this when not in object context | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\Model.php Строка: 20 
+        
+========================
+[2022-01-06 18:17:44] 
+        Текст ошибки: Using $this when not in object context | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\Model.php Строка: 29 
+        
+========================
+[2022-01-06 18:18:02] 
+        Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 18:22:48] 
+        Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 18:23:19] 
+        Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 18:23:46] 
+        Текст ошибки: Using $this when not in object context | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php Строка: 18 
+        
+========================
+[2022-01-06 18:24:01] 
+        Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 18:26:08] 
+        Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'id_user' doesn't have a default value | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-06 18:29:06] 
+        Текст ошибки: Function name must be a string | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php Строка: 22 
+        
+========================
