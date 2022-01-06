@@ -7,6 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
+
     <base href="<?=PATH?>/">
     <?=$this->getMeta();?>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />

@@ -20,6 +20,13 @@ class Order extends AppModel
     }
 
     public static function saveOrderProduct($idOrder) {
+        $sql_part = '';
+        foreach ($_SESSION['cart'] as $idProduct => $product) {
+            $idProduct = (int)$idProduct;
+            $sql_part .= "($idOrder, $idProduct, {$product['qty']}, '{$product['title']}-({$product['size']})', {$product['price']}),";
+        }
+        $sql_part = rtrim($sql_part, ',');
+        \R::exec("INSERT INTO order_products (id_order, id_product, qty, title, price) VALUES $sql_part");
 
     }
 
