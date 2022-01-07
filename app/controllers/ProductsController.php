@@ -18,7 +18,7 @@ class ProductsController extends AppController
 
     public function productAction() {
         $alias = $this->route['alias'];
-        $product = \R::findOne('products', "alias = ? AND status = ?", [$alias, '1']);
+        $product = \R::findOne('products', "alias = ? AND status = '1'", [$alias]);
         if (!$product) {
             throw new \Exception('Страница не найдена', 404);
         }

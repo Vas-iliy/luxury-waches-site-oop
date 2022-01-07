@@ -1006,3 +1006,361 @@
         Текст ошибки: Function name must be a string | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php Строка: 22 
         
 ========================
+[2022-01-07 14:47:21] 
+        Текст ошибки: Argument 1 passed to Symfony\Component\Mailer\Transport\Smtp\SmtpTransport::__construct() must be an instance of Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream or null, string given, called in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php on line 40 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\SmtpTransport.php Строка: 43 
+        
+========================
+[2022-01-07 14:48:06] 
+        Текст ошибки: Connection could not be established with host "localhost:25": stream_socket_client(): unable to connect to localhost:25 (��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+) | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\Stream\SocketStream.php Строка: 138 
+        
+========================
+[2022-01-07 14:49:46] 
+        Текст ошибки: The "imap.rambler.ru" mailer DSN must contain a scheme. | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Dsn.php Строка: 45 
+        
+========================
+[2022-01-07 14:51:10] 
+        Текст ошибки: Argument 1 passed to Symfony\Component\Mailer\Transport\Smtp\SmtpTransport::__construct() must be an instance of Symfony\Component\Mailer\Transport\Smtp\Stream\AbstractStream or null, string given, called in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php on line 40 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\SmtpTransport.php Строка: 43 
+        
+========================
+[2022-01-07 14:53:28] 
+        Текст ошибки: Connection could not be established with host "localhost:25": stream_socket_client(): unable to connect to localhost:25 (��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+) | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\Stream\SocketStream.php Строка: 138 
+        
+========================
+[2022-01-07 14:53:43] 
+        Текст ошибки: The "smtp.rambler.ru" mailer DSN must contain a scheme. | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Dsn.php Строка: 45 
+        
+========================
+[2022-01-07 14:53:55] 
+        Текст ошибки: Connection could not be established with host "localhost:25": stream_socket_client(): unable to connect to localhost:25 (��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+) | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\Stream\SocketStream.php Строка: 138 
+        
+========================
+[2022-01-07 14:54:33] 
+        Текст ошибки: Connection could not be established with host "localhost:25": stream_socket_client(): unable to connect to localhost:25 (��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+) | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\Stream\SocketStream.php Строка: 138 
+        
+========================
+[2022-01-07 14:54:48] 
+        Текст ошибки: Connection could not be established with host "localhost:25": stream_socket_client(): unable to connect to localhost:25 (��������� �� �����������, �.�. ������ ������� ������ ������ �� ���������.
+) | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\symfony\mailer\Transport\Smtp\Stream\SocketStream.php Строка: 138 
+        
+========================
+[2022-01-07 15:15:51] 
+        Текст ошибки: Connection could not be established with host  imap.rambler.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:17:10] 
+        Текст ошибки: Connection could not be established with host  smtp.rambler.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:18:24] 
+        Текст ошибки: Connection could not be established with host  smtp.rambler.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:21:08] 
+        Текст ошибки: Connection could not be established with host  smtp.rambler.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:25:04] 
+        Текст ошибки: Connection could not be established with host  smtp.rambler.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:30:26] 
+        Текст ошибки: Connection could not be established with host  smtp.rambler.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:41:56] 
+        Текст ошибки: Connection could not be established with host  smtp.mail.ru :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: ���� ���� ����������.  | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:52:11] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 15:59:38] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:00:10] 
+        Текст ошибки: Нет соединения с БД | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Db.php Строка: 15 
+        
+========================
+[2022-01-07 16:00:14] 
+        Текст ошибки: Address in mailbox given [phptruthcoder] does not comply with RFC 2822, 3.6.2. | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mime\Headers\MailboxHeader.php Строка: 355 
+        
+========================
+[2022-01-07 16:00:30] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:02:10] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:06:20] 
+        Текст ошибки: Connection to tcp://smtp.yandex.ru:465 Timed Out | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php Строка: 475 
+        
+========================
+[2022-01-07 16:09:57] 
+        Текст ошибки: Connection to smtp.yandex.ru:465 Timed Out | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php Строка: 475 
+        
+========================
+[2022-01-07 16:11:43] 
+        Текст ошибки: Connection to smtp.yandex.ru:465 Timed Out | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php Строка: 475 
+        
+========================
+[2022-01-07 16:13:54] 
+        Текст ошибки: Connection to tcp://smtp.yandex.ru:465 Timed Out | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php Строка: 475 
+        
+========================
+[2022-01-07 16:16:47] 
+        Текст ошибки: Connection to tcp://smtp.yandex.ru:465 Timed Out | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php Строка: 475 
+        
+========================
+[2022-01-07 16:17:14] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:26:35] 
+        Текст ошибки: Connection could not be established with host smtp.rambler.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:29:58] 
+        Текст ошибки: Connection could not be established with host smtp.rambler.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:30:25] 
+        Текст ошибки: Connection could not be established with host smtp.rambler.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:45:14] 
+        Текст ошибки: Connection could not be established with host smtp.rambler.ru :stream_socket_client(): SSL: Handshake timed out | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:47:46] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:48:36] 
+        Текст ошибки: Connection could not be established with host smtp.yandex.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 16:57:23] 
+        Текст ошибки: Failed to authenticate on SMTP server with username "testishop2@ukr.net" using 2 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535 Incorrect authentication data
+". | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\Esmtp\AuthHandler.php Строка: 191 
+        
+========================
+[2022-01-07 17:09:45] 
+        Текст ошибки: Connection could not be established with host smtp.mail.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 17:10:18] 
+        Текст ошибки: Нет соединения с БД | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Db.php Строка: 15 
+        
+========================
+[2022-01-07 17:10:28] 
+        Текст ошибки: Connection could not be established with host smtp.mail.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 17:12:02] 
+        Текст ошибки: Connection could not be established with host smtp.mail.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 17:12:33] 
+        Текст ошибки: Connection could not be established with host smtp.mail.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 18:29:34] 
+        Текст ошибки: Connection could not be established with host smtp.mail.ru :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1416F086:SSL routines:tls_process_server_certificate:certificate verify failed | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php Строка: 261 
+        
+========================
+[2022-01-07 18:30:26] 
+        Текст ошибки: Argument 1 passed to Swift_Mailer::send() must be an instance of Swift_Mime_SimpleMessage, null given, called in C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\models\Order.php on line 65 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Mailer.php Строка: 59 
+        
+========================
+[2022-01-07 18:36:25] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:36:37] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:36:45] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:38:21] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 24 
+        
+========================
+[2022-01-07 18:38:32] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 24 
+        
+========================
+[2022-01-07 18:38:34] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 25 
+        
+========================
+[2022-01-07 18:39:06] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 26 
+        
+========================
+[2022-01-07 18:41:01] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 26 
+        
+========================
+[2022-01-07 18:41:54] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 26 
+        
+========================
+[2022-01-07 18:41:56] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 26 
+        
+========================
+[2022-01-07 18:42:10] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 26 
+        
+========================
+[2022-01-07 18:42:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 26 
+        
+========================
+[2022-01-07 18:43:56] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:44:23] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:45:49] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:46:06] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:46:07] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:46:09] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:46:22] 
+        Текст ошибки: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-07 18:46:33] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:46:45] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:47:08] 
+        Текст ошибки: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-07 18:47:23] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:47:24] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:48:50] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:48:50] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:49:02] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:49:03] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:49:08] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:49:39] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:07] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:07] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:08] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:08] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:08] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:08] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:09] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:26] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:35] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:50:51] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1 LIMIT 1   -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-07 18:52:23] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
+[2022-01-07 18:52:49] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\ProductsController.php Строка: 23 
+        
+========================
