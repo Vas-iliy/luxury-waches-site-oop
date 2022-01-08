@@ -206,6 +206,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="preloader"><img src="images/ring.svg" alt=""></div>
+
 <?$curr = \luxury\App::$app->getProperty('currency')?>
 <script>
     var path = '<?=PATH?>',
