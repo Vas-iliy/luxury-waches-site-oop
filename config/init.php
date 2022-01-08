@@ -1,4 +1,5 @@
 <?php
+//посмотри транзакции!!!
 
 define("DEBUG", 1);
 define("ROOT", dirname(__DIR__));
