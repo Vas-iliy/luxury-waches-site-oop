@@ -159,6 +159,11 @@ $('body').on('change', '.w_sidebar input', function () {
             success: function (res) {
                 $('.preloader').delay(500).fadeOut('slow', function () {
                     $('.product-one').html(res).fadeIn();
+                    var url = location.search.replace(/filter(.+?)(&|$)/g, '');
+                    var newUrl = location.pathname + url + (location.search ? "&" : "?") + "filter=" + data;
+                    newUrl = newUrl.replace('&&', '&');
+                    newUrl = newUrl.replace('?&', '?');
+                    history.pushState({}, '', newUrl);
                 });
             },
             error: function () {

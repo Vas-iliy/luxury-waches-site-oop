@@ -11,7 +11,7 @@ class Filter
     public $tpl;
     public function __construct()
     {
-       $this->tpl = __DIR__ . '/filter_tpl.php';
+       $this->tpl = __DIR__ . '/filter_tpl/filter.php';
        $this->run();
     }
 
@@ -47,5 +47,14 @@ class Filter
             $attrs[$v['id_group']][$k] = $v['value'];
         }
         return $attrs;
+    }
+
+    public static function getFilter() {
+        $filter = null;
+        if (!empty($_GET['filter'])) {
+            $filter = preg_replace("#[^\d,]+#", '', $_GET['filter']);
+            $filter = rtrim($filter, ',');
+        }
+        return $filter;
     }
 }
