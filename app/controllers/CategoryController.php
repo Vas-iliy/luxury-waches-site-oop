@@ -31,12 +31,12 @@ class CategoryController extends AppController
             $filter = Filter::getFilter();
             if ($filter) {
                 $cnt = Filter::getCountGroups($filter);
-                $sql_part = "AND id IN (SELECT id_product FROM attribute_product WHERE id_attr IN ($filter) GROUP BY id_product HAVING COUNT(id_product) = $cnt)";
+                $group = "GROUP BY id_product HAVING COUNT(id_product) = $cnt";
+                $sql_part = "AND id IN (SELECT id_product FROM attribute_product WHERE id_attr IN ($filter) $group)";
+
             }
         }
-        $f = Filter::getFiltersWithProducts(\R::find('products', "id_category IN ($ids) $sql_part"));
-        $_SESSION['filter_active'] = $f;
-
+        $_SESSION['filter_active'] = Filter::getFiltersWithProducts(\R::find('products', "id_category IN ($ids) $sql_part"));
 
         $total = \R::count('products', "id_category IN ($ids) $sql_part");
         $pagination = new Pagination($page, $perpage, $total);

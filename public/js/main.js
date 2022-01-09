@@ -143,12 +143,13 @@ $('#typeahead').bind('search:select', function(ev, suggestion) {
 $('body').on('change', '.w_sidebar input', function () {
     var checked = $('.w_sidebar input:checked'),
         data = '';
+
     checked.each(function () {
         data += this.value + ',';
     })
     if (data) {
         $.ajax({
-           url: location.href,
+            url: location.href,
             data: {filter: data},
             type: 'GET',
             beforeSend: function () {
