@@ -164,6 +164,7 @@ $('body').on('change', '.w_sidebar input', function () {
                     newUrl = newUrl.replace('&&', '&');
                     newUrl = newUrl.replace('?&', '?');
                     history.pushState({}, '', newUrl);
+                    window.location.reload();
                 });
             },
             error: function () {

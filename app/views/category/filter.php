@@ -1,4 +1,3 @@
-
 <?php if(!empty($products)): ?>
     <?php foreach($products as $product): ?>
         <div class="col-md-4 product-left p-left">

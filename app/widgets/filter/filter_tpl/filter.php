@@ -10,9 +10,17 @@
                         $checked = null;
                     }
                     ?>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkbox" value="<?=$idAttr?>" <?=$checked?>><i></i><?=$value?>
+
+                <label class="checkbox" <?if(is_array($value) && $value[1]) {echo 'style="cursor: default" id="none"'; }?>>
+                    <input <?=(is_array($value) ? $value[1] : '')?> type="checkbox" name="checkbox" value="<?=$idAttr?>" <?=$checked?>><i></i><?=(is_array($value) ? $value[0] : $value)?>
                 </label>
+                    <?if(is_array($value) && $value[1]):?>
+                        <style>
+                            label#none:hover i{
+                                border-color: #e5e5e5;
+                            }
+                        </style>
+                    <?endif;?>
                 <?endforeach;?>
             </div>
         </div>

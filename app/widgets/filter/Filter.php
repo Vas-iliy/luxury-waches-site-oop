@@ -27,6 +27,7 @@ class Filter
             $this->attrs = self::getAttrs();
             $cache->set('filter_attrs', $this->attrs);
         }
+        $this->setAttrs($_SESSION['filter_active']);
         echo $this->getHtml();
     }
 
@@ -79,5 +80,40 @@ class Filter
             }
         }
         return count($data);
+    }
+
+    public static function getFiltersWithProducts($products) {
+        if (!empty($products)) {
+            $idProducts = '';
+            foreach ($products as $product) {
+                $idProducts .= $product['id'] . ',';
+            }
+            $idProducts = rtrim($idProducts, ',');
+            $filterId = \R::getAssoc("SELECT id_attr FROM attribute_product WHERE id_product IN ($idProducts)");
+            return $filterId;
+        }
+        return null;
+    }
+
+    public function setAttrs($filters) {
+        if (!empty($filters)) {
+            foreach ($this->attrs as $key => $item) {
+                foreach ($item as $id_attrs => $title) {
+                    foreach ($filters as $k => $v) {
+                        if ($id_attrs == $k) {
+                            $this->attrs[$key][$id_attrs] = [$title, ''];
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        foreach ($this->attrs as $key => $item) {
+            foreach ($item as $id_attrs => $title) {
+                if (!is_array($title)) {
+                    $this->attrs[$key][$id_attrs] = [$title, 'disabled'];
+                }
+            }
+        }
     }
 }
