@@ -30,7 +30,7 @@
                                     </div>
                                     <?if($product->old_price):?>
                                         <div class="srch">
-                                            <span>-<?=(100-$product->price*100/$product->old_price)?>%</span>
+                                            <span>-<?=round((100-$product->price*100/$product->old_price))?>%</span>
                                         </div>
                                     <?endif;?>
                                 </div>

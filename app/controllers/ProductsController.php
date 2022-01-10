@@ -5,16 +5,19 @@ namespace app\controllers;
 use app\models\Breadcrumbs;
 use app\models\Products;
 use luxury\App;
+use luxury\Curr;
 
 class ProductsController extends AppController
 {
+    use Curr;
+
     public function indexAction() {
         $brands = \R::find('brands', 'LIMIT 3');
         $hits = \R::find('products', "hit = '1' AND status = '1' LIMIT 8");
-        $curr = App::$app->getProperty('currency');
+        $curr = self::Curr();
         $canonical = PATH;
         $this->setMeta('Главная страница');
-        $this->set(compact('brands', 'hits', 'curr', 'canonical'));
+        $this->set(compact('brands', 'hits', 'curr', 'canonical', 'user'));
     }
 
     public function productAction() {
@@ -28,7 +31,7 @@ class ProductsController extends AppController
         $mods = \R::findAll('modifications', 'id_product = ?', [$product->id]);
         $size = \R::getAll("SELECT size.* FROM size JOIN size_product ON size.id=size_product.id_size 
 JOIN products ON size_product.id_product=products.id WHERE products.id = $product->id");
-        $curr = App::$app->getProperty('currency');
+        $curr = self::Curr();
         $category = App::$app->getProperty('categories');
         $descriptions = \R::getRow('SELECT description, `additional information` FROM description WHERE id_product = ?', [$product->id]);
         $reviews = \R::getAll('SELECT review, rating, dt_add, login, users.img FROM reviews JOIN users ON (id_user = users.id) 

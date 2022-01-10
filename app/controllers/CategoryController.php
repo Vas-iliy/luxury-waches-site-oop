@@ -6,10 +6,13 @@ use app\models\Breadcrumbs;
 use app\models\Category;
 use app\widgets\filter\Filter;
 use luxury\App;
+use luxury\Curr;
 use luxury\libs\Pagination;
 
 class CategoryController extends AppController
 {
+    use Curr;
+
     public function categoryAction() {
         $alias = $this->route['alias'];
         $category = \R::findOne('categories', 'alias = ?', [$alias]);
@@ -43,11 +46,7 @@ class CategoryController extends AppController
         $start = $pagination->getStart();
 
         $products = \R::find('products', "id_category IN ($ids) $sql_part LIMIT $start, $perpage");
-        $curr = App::$app->getProperty('currency');
-
-        if ($this->isAjax()) {
-            $this->loadView('filter', compact('products', 'curr', 'pagination'));
-        }
+        $curr = self::Curr();
 
         $this->setMeta($category->title, $category->description, $category->keywords);
         $this->set(compact('products', 'breadcrumbs', 'curr', 'pagination'));

@@ -70,7 +70,7 @@ class CartController extends AppController
             redirect(PATH . "/user/login");
         }
 
-        $curr = App::$app->getProperty('currency');
+        $curr = self::Curr();
 
         $this->setMeta('Корзина');
         $this->set(compact('curr'));
