@@ -12,10 +12,15 @@ use luxury\Cache;
 class AppController extends Controller
 {
     public $user;
+    public $uri;
     public function __construct($route)
     {
         parent::__construct($route);
+        $this->uri = $_SERVER['REQUEST_URI'];
         new AppModel();
+        if (checkUri($this->uri) || $this->uri !== trimUri($this->uri)) {
+            throw new \Exception('Страница не найдена', 404);
+        }
         App::$app->setProperty('currencies', Currency::getCurrencies());
         App::$app->setProperty('currency', Currency::getCurrency(App::$app->getProperty('currencies')));
         App::$app->setProperty('categories', self::cacheCategory());

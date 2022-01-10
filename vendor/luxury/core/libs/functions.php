@@ -18,3 +18,19 @@ function redirect($http = false) {
 function h($str) {
     return htmlspecialchars($str, ENT_QUOTES);
 }
+
+function checkUri(string $uri) : bool {
+    return !!preg_match('/\/{2,}/',$uri);
+}
+
+function trimUri(string $uri) : string {
+    $arr = explode('/', $uri);
+    $num = count($arr);
+
+    if ($arr[$num-1] === '' && $num > 3) {
+        unset($arr[$num-1]);
+        $uri = implode('/', $arr);
+    }
+
+    return $uri;
+}

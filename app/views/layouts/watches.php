@@ -7,8 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-
     <base href="<?=PATH?>/">
+    <?if(!empty($canonical)):?>
+        <link rel="canonical" href="<?=$canonical?>/">
+    <?endif;?>
     <?=$this->getMeta();?>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />

@@ -12,8 +12,9 @@ class ProductsController extends AppController
         $brands = \R::find('brands', 'LIMIT 3');
         $hits = \R::find('products', "hit = '1' AND status = '1' LIMIT 8");
         $curr = App::$app->getProperty('currency');
+        $canonical = PATH;
         $this->setMeta('Главная страница');
-        $this->set(compact('brands', 'hits', 'curr'));
+        $this->set(compact('brands', 'hits', 'curr', 'canonical'));
     }
 
     public function productAction() {
