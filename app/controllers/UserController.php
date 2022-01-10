@@ -97,6 +97,23 @@ class UserController extends AppController
         $user = $this->user;
         $this->set(compact('user'));
         $this->setMeta('User');
+    }
+
+    public function ordersAction() {
+        if (empty($this->user)) redirect(PATH . '/user/login');
+        $orders = \R::findAll('orders', "id_user = ?", [$this->user['id']]);
+        $this->setMeta('Store orders');
+        $this->set(compact('orders'));
+    }
+
+    public function orderAction() {
+        if (empty($this->user)) redirect(PATH . '/user/login');
+        if (empty(h(trim((int)$_GET['id'])))) redirect();
+        $id_order = h(trim((int)$_GET['id']));
+        $order = \R::findOne('orders', 'id = ?', [$id_order]);
+        $order_products = \R::findAll('order_products', 'id_order = ?', [$id_order]);
+        $this->set(compact('order', 'order_products'));
+        $this->setMeta("Order № $id_order");
 
     }
 }
