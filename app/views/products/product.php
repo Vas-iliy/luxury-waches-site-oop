@@ -89,43 +89,56 @@
                     </div>
                     <div class="clearfix"> </div>
                 </div>
+                <?if(!empty($descriptions)):?>
                 <div class="tabs">
-                    <ul class="menu_drop">
-                        <li class="item1"><a href="#"><img src="images/arrow.png" alt="">Description</a>
-                            <ul>
-                                <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></li>
-                                <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-                                <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-                            </ul>
-                        </li>
-                        <li class="item2"><a href="#"><img src="images/arrow.png" alt="">Additional information</a>
-                            <ul>
-                                <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-                                <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-                            </ul>
-                        </li>
-                        <li class="item3"><a href="#"><img src="images/arrow.png" alt="">Reviews (10)</a>
-                            <ul>
-                                <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></li>
-                                <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-                                <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-                            </ul>
-                        </li>
-                        <li class="item4"><a href="#"><img src="images/arrow.png" alt="">Helpful Links</a>
-                            <ul>
-                                <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-                                <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-                            </ul>
-                        </li>
-                        <li class="item5"><a href="#"><img src="images/arrow.png" alt="">Make A Gift</a>
-                            <ul>
-                                <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></li>
-                                <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-                                <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <?foreach ($descriptions as $key => $description):?>
+                        <ul class="menu_drop">
+                            <?if($description):?>
+                            <li class="item1"><a><?=$key?></a>
+                                    <li class="subitem1"><?=$description?></li>
+                            </li>
+                            <?endif;?>
+                        </ul>
+                    <?endforeach;?>
                 </div>
+                <?endif;?>
+                <?if(!empty($reviews)):?>
+                    <div class="comments">
+                        <h3 class="title-comments">Review (<?=count($reviews)?>)</h3>
+                        <ul class="media-list">
+                            <?foreach ($reviews as $review):?>
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <?if($review['img']):?>
+                                        <img class="media-object img-rounded" src="images/users/<?=$review['img']?>" alt="...">
+                                        <?else:?>
+                                            <img class="media-object img-rounded" src="images/users/no_image.jpg" alt="...">
+                                        <?endif;?>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        <div class="author"><?=mb_strtoupper($review['login'])?></div>
+                                        <div class="metadata">
+                                            <span class="date"><?=date('d F Y, H:i', strtotime($review['dt_add']))?></span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-result">
+                                        <?for($i = 0; $i<round($review['rating']); $i++):?>
+                                        <span class="active"></span>
+                                        <?endfor;?>
+                                        <?for ($i = 0; $i<5-round($review['rating']); $i++):?>
+                                        <span></span>
+                                        <?endfor;?>
+                                    </div>
+                                </div>
+                                <div class="media-text text-justify"><?=$review['review']?></div>
+                            </li>
+                            <?endforeach;?>
+                        </ul>
+                    </div>
+                <?endif;?>
                 <?if($related):?>
                 <div class="latestproducts">
                     <div class="product-one">

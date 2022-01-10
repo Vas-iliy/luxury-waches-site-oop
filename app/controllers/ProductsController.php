@@ -29,6 +29,9 @@ class ProductsController extends AppController
 JOIN products ON size_product.id_product=products.id WHERE products.id = $product->id");
         $curr = App::$app->getProperty('currency');
         $category = App::$app->getProperty('categories');
+        $descriptions = \R::getRow('SELECT description, `additional information` FROM description WHERE id_product = ?', [$product->id]);
+        $reviews = \R::getAll('SELECT review, rating, dt_add, login, users.img FROM reviews JOIN users ON (id_user = users.id) 
+JOIN products ON (id_product = products.id) WHERE id_product = ?', [$product->id]);
         $related = \R::getAll("SELECT * FROM related_products JOIN products ON products.id = related_products.id_related WHERE related_products.id_product = ? LIMIT 3", [$product->id]);
 
         $p_model = new Products();
@@ -40,6 +43,6 @@ JOIN products ON size_product.id_product=products.id WHERE products.id = $produc
         }
 
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product','breadcrumbs','gallery','mods', 'size','curr','category', 'related','recentlyViewed'));
+        $this->set(compact('product','breadcrumbs','gallery','mods', 'size','curr','category', 'descriptions', 'reviews', 'related','recentlyViewed'));
     }
 }

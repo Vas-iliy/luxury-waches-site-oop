@@ -3220,3 +3220,55 @@ form .has-error .form-control{
 	top:50vh;
 	margin:-100px 0 0 -100px;
 }
+
+/*Reviews*/
+.media-body .author {
+	display: inline-block;
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: 700;
+
+}
+.media-left a > img {
+	width: 30px;
+}
+.media-body .metadata {
+	display: inline-block;
+	margin-left: .5rem;
+	color: #000;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.comment-reply a {
+	color: #777;
+}
+.media-text {
+	margin-bottom: 0.25rem;
+	font-size: 1.4rem;
+}
+.title-comments {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	color: rgba(0, 0, 0, .87);
+	margin-bottom: 1rem;
+	padding-bottom: .25rem;
+	border-bottom: 1px solid rgba(34, 36, 38, .15);
+}
+.rating-result {
+	width: 100px;
+}
+.rating-result span {
+	padding: 0;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
