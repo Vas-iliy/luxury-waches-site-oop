@@ -48,7 +48,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </a>
                         <ul class="dropdown-menu">
                             <?if(!empty($_SESSION['token']) || !empty($_COOKIE['token'])):?>
-                            <li><a href="#">Добро пожаловать, <?=\app\models\User::getUser()['name']?></a></li>
+                            <li><a href="user/cabinet">Добро пожаловать, <?=\app\models\User::getUser()['name']?></a></li>
                             <li><a href="user/logout">Выход</a></li>
                             <?else:?>
                             <li><a href="user/login">Вход</a></li>

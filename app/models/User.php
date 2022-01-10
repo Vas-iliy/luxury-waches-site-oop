@@ -31,8 +31,13 @@ class User extends AppModel
         ]
     ];
 
-    public function checkUnique() {
-        $user = \R::findOne('users', 'login = ? OR email = ?', [$this->attributes['login'], $this->attributes['email']]);
+    public function checkUnique($userYes) {
+        if ($userYes) {
+            $user = \R::findOne('users', '(login = ? OR email = ?) AND id <> ?', [$this->attributes['login'], $this->attributes['email'], $this->attributes['id']]);
+        }else {
+            $user = \R::findOne('users', 'login = ? OR email = ?', [$this->attributes['login'], $this->attributes['email']]);
+
+        }
         if ($user) {
             if ($user->login == $this->attributes['login']) {
                 $this->errors['unique'][] = 'Ха, ЛОХ. Логин занят';
@@ -84,7 +89,9 @@ class User extends AppModel
             }
 
             if (!$user) {
-                unset($_SESSION['token']);
+                if (!empty($_SESSION['token'])) {
+                    unset($_SESSION['token']);
+                }
                 setcookie('token', '', time() - 1);
             }
         }

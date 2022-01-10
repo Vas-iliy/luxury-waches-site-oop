@@ -11,7 +11,7 @@ class UserController extends AppController
             $user = new User();
             $data = $_POST;
             $user->load($data);
-            if (!$user->validate($data) || !$user->checkUnique()) {
+            if (!$user->validate($data) || !$user->checkUnique($this->user)) {
                 $user->getErrors();
                 $this->set(compact('data'));
             }
@@ -38,7 +38,7 @@ class UserController extends AppController
             else {
                 $_SESSION['error'] = 'Логин/пароль введены неверно';
             }
-            redirect(PATH);
+            redirect(PATH.'/user/cabinet');
         }
         $this->setMeta('Вход');
     }
@@ -48,6 +48,55 @@ class UserController extends AppController
             unset($_SESSION['token']);
             setcookie('token', '', time() - 1, '/');
         }
-        redirect();
+        redirect(PATH);
+    }
+
+    public function cabinetAction() {
+        if (empty($this->user)) redirect();
+        $this->setMeta('Cabinet');
+    }
+
+    public function editAction() {
+        if (empty($this->user)) redirect(PATH . '/user/login');
+        if (!empty($_POST)) {
+            $user = new User;
+            $data = $_POST;
+            $user->load($data);
+            $user->attributes['id'] = $this->user['id'];
+            if (!$user->attributes['password']) {
+                unset($user->attributes['password']);
+                foreach ($user->rules as $key => $rule) {
+                    foreach ($rule as $k => $attr) {
+                        foreach ($attr as $item) {
+                            if ($item === 'password') {
+                                unset($user->rules[$key][$k]);
+                            }
+                        }
+                    }
+                }
+            }
+            else {
+                $user->attributes['password'] = password_hash($user->attributes['password'], PASSWORD_DEFAULT);
+            }
+            if (!$user->validate($data) || !$user->checkUnique($this->user)) {
+                $user->getErrors();
+                $this->set(compact('data'));
+            }
+            else {
+                if ($user->update('users', $this->user['id'])) {
+                    if (!empty($_SESSION['token'])) {
+                        unset($_SESSION['token']);
+                    }
+                    setcookie('token', '', time() - 1);
+                    $_SESSION['success'] = 'Вы успешно изменили данные. Войдите в аккаунт чтобы убедиться в этом!';
+                    redirect(PATH . '/user/login');
+                    die();
+                }
+            }
+        }
+        $user = $this->user;
+        $this->set(compact('user'));
+        $this->setMeta('User');
+
     }
 }
