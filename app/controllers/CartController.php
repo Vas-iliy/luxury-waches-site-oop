@@ -80,6 +80,7 @@ class CartController extends AppController
         if (!empty($_POST)) {
             $data['id_user'] = $this->user['id'];
             $data['note'] = !empty($_POST['note']) ? h(trim($_POST['note'])) : '';
+            $data['sum'] = $_SESSION['cart.sum'];
             $idOrder = Order::saveOrder($data);
             Order::mailOrder($idOrder, $this->user['email']);
         }

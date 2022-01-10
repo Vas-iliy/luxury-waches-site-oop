@@ -15,7 +15,8 @@ class Order extends AppModel
         $order->attributes = [
             'id_user' => $data['id_user'],
             'currency' => App::$app->getProperty('currency')['code'],
-            'note' => $data['note']
+            'note' => $data['note'],
+            'sum' => $data['sum']
         ];
         $idOrder = $order->save('orders');
         self::saveOrderProduct($idOrder);
