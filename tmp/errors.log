@@ -254,3 +254,27 @@
         Текст ошибки: syntax error, unexpected ')' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 180 
         
 ========================
+[2022-01-11 17:52:02] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0 AND id IN (SELECT id_product FROM attribute_product WHERE id_attr IN (3) GROUP' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 18:43:29] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object]/1  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 18:48:37] 
+        Текст ошибки: Using $this when not in object context | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\filter_tpl\filter.php Строка: 10 
+        
+========================
+[2022-01-11 18:48:37] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 18:48:37] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 18:48:37] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================

@@ -2,8 +2,8 @@
     <h4>Цена</h4>
     <div class="row1 price">
         <div class="col col-4" style="display: flex">
-                <input style="width: 45%;" type="text" class="price_start" name="price_start" value="<?=$price[0] ?? ''?>" placeholder="0 <?=$curr['symbol']?>">
-                <input style="width: 45%; " type="text" class="price_end" name="price_end" value="<?=$price[1] ?? ''?>" placeholder="999 <?=$curr['symbol']?>">
+                <input style="width: 45%;" type="text" class="price_start" name="price_start" value="<?=(!empty($price[0]) ? $price[0] : '')?>" placeholder="0 <?=$curr['symbol']?>">
+                <input style="width: 45%; " type="text" class="price_end" name="price_end" value="<?=(!empty($price[1]) ? $price[1] : '')?>" placeholder="<?=(999*$curr['value'])?> <?=$curr['symbol']?>">
         </div>
     </div>
 </section>

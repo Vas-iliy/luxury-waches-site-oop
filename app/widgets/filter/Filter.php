@@ -35,9 +35,9 @@ class Filter
 
     protected function getHtml() {
         ob_start();
-        $filter = self::getFilter();
-        $price = Filter::getPrice();
         $curr = self::Curr();
+        $filter = self::getFilter();
+        $price = self::getPrice();
         if (!empty($filter)) {
             $filter = explode(',', $filter);
         }
@@ -186,5 +186,30 @@ class Filter
         $newUrl = str_replace('&&', '&', $newUrl);
         $newUrl = str_replace('?&', '?', $newUrl);
         return $newUrl;
+    }
+
+    public static function refactorProductsWithFilters($curr = 1) {
+        $sql_price = ''; $sql_part = '';
+        if (!empty(Filter::getPrice())) {
+            $price = Filter::getPrice();
+            if ($price[1]) {
+                if (!$price[0]) $price[0] = 0;
+                $sql_price = "AND products.price > $price[0]/$curr AND products.price <= $price[1]/$curr";
+            }
+            else {
+                $sql_price = "AND products.price >= $price[0]/$curr";
+            }
+        }
+
+        if (!empty(Filter::getFilter())) {
+            $filter = Filter::getFilter();
+            if ($filter) {
+                $cnt = Filter::getCountGroups($filter);
+                $group = "GROUP BY id_product HAVING COUNT(id_product) = $cnt";
+                $sql_part = "AND id IN (SELECT id_product FROM attribute_product WHERE id_attr IN ($filter) $group)";
+            }
+        }
+
+        return [$sql_price, $sql_part];
     }
 }

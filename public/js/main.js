@@ -125,7 +125,6 @@ var products = new Bloodhound({
 products.initialize();
 
 $("#typeahead").typeahead({
-    // hint: false,
     highlight: true
 },{
     name: 'products',
@@ -135,17 +134,13 @@ $("#typeahead").typeahead({
 });
 
 $('#typeahead').bind('search:select', function(ev, suggestion) {
-    //console.log(suggestion);
     window.location = path + '/search/?s=' + encodeURIComponent(suggestion.title);
 });
 
 /*Filters*/
 $('body').on('change', '.sky-form input', function () {
     var checked = $('.sky-form input:checked'),
-        data = '',
-        price_start = $('.price input.price_start').val(),
-        price_end = $('.price input.price_end').val();
-
+        data = '', price_start = $('.price input.price_start').val(), price_end = $('.price input.price_end').val();
     checked.each(function () {
         data += this.value + ',';
     })
@@ -155,9 +150,7 @@ $('body').on('change', '.sky-form input', function () {
     }
     if (data) {
         $.ajax({
-            url: location.href,
-            data: {filter: data},
-            type: 'GET',
+            url: location.href, data: {filter: data}, type: 'GET',
             beforeSend: function () {
                 $('.preloader').fadeIn(300, function () {
                     $('.product-one').hide();
@@ -168,7 +161,7 @@ $('body').on('change', '.sky-form input', function () {
                     $('.product-one').html(res).fadeIn();
                     var newUrl = $('input.uri').val();
                     history.pushState({}, '', newUrl);
-                    window.location.reload();
+                    //window.location.reload();
                 });
             },
             error: function () {
