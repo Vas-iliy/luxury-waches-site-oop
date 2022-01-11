@@ -968,6 +968,12 @@ a.mask {
     overflow: auto;
     height: 155px;
 }
+.price {
+	height: auto;
+}
+.price input {
+	margin: 2.5%;
+}
 .row2 {
 	height: 175px;
 }

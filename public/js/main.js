@@ -140,13 +140,19 @@ $('#typeahead').bind('search:select', function(ev, suggestion) {
 });
 
 /*Filters*/
-$('body').on('change', '.w_sidebar input', function () {
-    var checked = $('.w_sidebar input:checked'),
-        data = '';
+$('body').on('change', '.sky-form input', function () {
+    var checked = $('.sky-form input:checked'),
+        data = '',
+        price_start = $('.price input.price_start').val(),
+        price_end = $('.price input.price_end').val();
 
     checked.each(function () {
         data += this.value + ',';
     })
+
+    if (price_start || price_end) {
+        data += 'price:' + price_start + ',' + price_end;
+    }
     if (data) {
         $.ajax({
             url: location.href,
@@ -160,10 +166,7 @@ $('body').on('change', '.w_sidebar input', function () {
             success: function (res) {
                 $('.preloader').delay(500).fadeOut('slow', function () {
                     $('.product-one').html(res).fadeIn();
-                    var url = location.search.replace(/filter(.+?)(&|$)/g, '');
-                    var newUrl = location.pathname + url + (location.search ? "&" : "?") + "filter=" + data;
-                    newUrl = newUrl.replace('&&', '&');
-                    newUrl = newUrl.replace('?&', '?');
+                    var newUrl = $('input.uri').val();
                     history.pushState({}, '', newUrl);
                     window.location.reload();
                 });

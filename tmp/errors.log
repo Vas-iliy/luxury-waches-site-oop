@@ -1,0 +1,256 @@
+[2022-01-10 16:10:12] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 16:19:54] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 16:21:19] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 16:22:37] 
+        Текст ошибки: Call to undefined function degug() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\views\category\category.php Строка: 10 
+        
+========================
+[2022-01-10 16:25:14] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 20 
+        
+========================
+[2022-01-10 17:01:12] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 17:03:11] 
+        Текст ошибки: Метод app\controllers\CategoryController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-10 17:03:37] 
+        Текст ошибки: Метод app\controllers\CategoryController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-10 17:04:00] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 20 
+        
+========================
+[2022-01-10 17:04:36] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 22 
+        
+========================
+[2022-01-10 17:05:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 20 
+        
+========================
+[2022-01-10 17:06:03] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 22 
+        
+========================
+[2022-01-10 17:37:55] 
+        Текст ошибки: Метод app\controllers\CategoryController::indexAction не найден | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 37 
+        
+========================
+[2022-01-10 17:51:42] 
+        Текст ошибки: Call to undefined method app\models\Category::getAttrsPrice() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 22 
+        
+========================
+[2022-01-10 18:20:20] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:20:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:52] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:20:52] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:52] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:52] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:53] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:20:53] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:53] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:53] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:20:58] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:21:00] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:21:00] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:21:00] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:21:00] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:21:48] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:21:48] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:21:48] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:21:48] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:22:20] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-10 18:22:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:22:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:22:20] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-10 18:22:22] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-11 09:46:39] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 09:46:39] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 09:46:39] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 09:47:09] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 09:47:09] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 09:47:09] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-11 09:51:45] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Cart/show.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-11 09:51:52] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Cart/show.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-11 09:52:00] 
+        Текст ошибки: Не найден вид C:\Programming\OpenServer\domains\projectTrening\Project2OOP/app/views/Cart/show.php | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\base\View.php Строка: 44 
+        
+========================
+[2022-01-11 13:51:34] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<= products.price <= 400  LIMIT 0, 3  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 13:53:52] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND products.price <= 300  LIMIT 0, 3  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 13:56:48] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND products.price <= 350  LIMIT 6, 3  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 13:57:56] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND products.price <= 350  LIMIT 0, 3  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 15:02:00] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND id IN (SELECT id_product FROM attribute_product WHERE id_attr IN (1,10) GROU' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 15:03:30] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::getPrice() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 177 
+        
+========================
+[2022-01-11 15:40:54] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',54) GROUP BY id_product HAVING COUNT(id_product) = 1)  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 15:56:19] 
+        Текст ошибки: syntax error, unexpected '}' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 173 
+        
+========================
+[2022-01-11 15:58:46] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',555) GROUP BY id_product HAVING COUNT(id_product) = 0)  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 16:00:17] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::getPrice() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\controllers\CategoryController.php Строка: 17 
+        
+========================
+[2022-01-11 16:02:11] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',546) GROUP BY id_product HAVING COUNT(id_product) = 0)  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 16:05:49] 
+        Текст ошибки: syntax error, unexpected '}' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 172 
+        
+========================
+[2022-01-11 16:19:29] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',450) GROUP BY id_product HAVING COUNT(id_product) = 0)  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 16:20:02] 
+        Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',450) GROUP BY id_product HAVING COUNT(id_product) = 0)  -- keep-cache' at line 1 | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php Строка: 206 
+        
+========================
+[2022-01-11 16:55:51] 
+        Текст ошибки: syntax error, unexpected ')' | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 180 
+        
+========================

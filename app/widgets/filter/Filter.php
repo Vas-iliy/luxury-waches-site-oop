@@ -3,9 +3,11 @@
 namespace app\widgets\filter;
 
 use luxury\Cache;
+use luxury\Curr;
 
 class Filter
 {
+    use Curr;
     public $groups;
     public $attrs;
     public $tpl;
@@ -34,6 +36,8 @@ class Filter
     protected function getHtml() {
         ob_start();
         $filter = self::getFilter();
+        $price = Filter::getPrice();
+        $curr = self::Curr();
         if (!empty($filter)) {
             $filter = explode(',', $filter);
         }
@@ -57,7 +61,7 @@ class Filter
     public static function getFilter() {
         $filter = null;
         if (!empty($_GET['filter'])) {
-            $filter = preg_replace("#[^\d,]+#", '', $_GET['filter']);
+            $filter = preg_replace("#[^\d,]+#", '', preg_replace('/price.*/', '', $_GET['filter']));
             $filter = rtrim($filter, ',');
         }
         return $filter;
@@ -157,5 +161,30 @@ class Filter
                 }
             }
         }
+    }
+
+    public static function getPrice() {
+        $price = [];
+        if (!empty($_GET['filter']) && preg_match('/price:.*/', $_GET['filter'])) {
+            $price = preg_replace('/.*price:/', '', $_GET['filter']);
+            $price = explode(',', $price);
+        }
+        return $price;
+    }
+
+    public static function getUri() {
+        $filter = self::getFilter();
+        $price = self::getPrice();
+        if (!empty($filter) || !empty($price)) {
+            $url = preg_replace('/filter(.+?)(&|$)/', '', $_SERVER['REQUEST_URI']);
+            $newUrl = $url . (preg_match('/\?/', $url) ? '&' : '?') . "filter=" . $_GET['filter'];
+        }
+        else {
+            $newUrl = $_SERVER['REQUEST_URI'];
+        }
+
+        $newUrl = str_replace('&&', '&', $newUrl);
+        $newUrl = str_replace('?&', '?', $newUrl);
+        return $newUrl;
     }
 }
