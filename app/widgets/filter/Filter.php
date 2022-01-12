@@ -182,10 +182,32 @@ class Filter
         else {
             $newUrl = $_SERVER['REQUEST_URI'];
         }
-
         $newUrl = str_replace('&&', '&', $newUrl);
         $newUrl = str_replace('?&', '?', $newUrl);
         return $newUrl;
+    }
+
+    public static function deleteFilterPrice() {
+        if (!empty($_SESSION['price'])) {
+            $url = self::getUri();
+            $get = preg_replace('/^.+\?/', '', $url);
+            if ($get && preg_match('/\?/', $url)) {
+                $get = explode('&', $get);
+                $newGet = '';
+                foreach ($get as $item) {
+                    if (preg_match('/filter.*/', $item)) {
+                        $item = rtrim(preg_replace('/price.*$/', '', $item), ',');
+                    }
+                    $newGet .= $item . '&';
+                }
+                $newGet = preg_replace('/\?.*$/', '', $url) . '?' . rtrim($newGet, '&');
+            }
+            else {
+                $newGet = $url;
+            }
+            unset($_SESSION['price']);
+            redirect($newGet);
+        }
     }
 
     public static function refactorProductsWithFilters($curr = 1) {
@@ -200,7 +222,6 @@ class Filter
                 $sql_price = "AND products.price >= $price[0]/$curr";
             }
         }
-
         if (!empty(Filter::getFilter())) {
             $filter = Filter::getFilter();
             if ($filter) {
@@ -209,7 +230,6 @@ class Filter
                 $sql_part = "AND id IN (SELECT id_product FROM attribute_product WHERE id_attr IN ($filter) $group)";
             }
         }
-
         return [$sql_price, $sql_part];
     }
 }

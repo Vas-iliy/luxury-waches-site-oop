@@ -81,6 +81,7 @@ class Pagination
         preg_match_all("#filter=[\d,&]#", $url, $matches);
         if (count($matches[0]) > 1) {
             $url = preg_replace("#filter=[\d,&]+#", "", $url, 1);
+            $url = preg_replace("#price:[\d,&]+#", "", $url);
         }
         $url = explode('?', $url);
         $uri = $url[0] . '?';

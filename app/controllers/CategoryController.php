@@ -46,8 +46,9 @@ class CategoryController extends AppController
         $this->loadView('products', compact('products', 'curr', 'pagination'), false);
         $productsView = ob_get_clean();
 
+        $uri = Filter::getUri();
+        Filter::deleteFilterPrice();
         if($this->isAjax()){
-            $uri = Filter::getUri();
             $this->loadView('filter', compact('productsView', 'uri'));
         }
 

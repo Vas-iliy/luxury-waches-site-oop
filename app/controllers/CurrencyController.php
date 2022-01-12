@@ -13,6 +13,7 @@ class CurrencyController extends AppController
             if (!empty($curr)) {
                 $_SESSION['currency'] = $currency;
                 Cart::recalc($curr);
+                $_SESSION['price'] = 'delete';
             }
         }
         redirect();
