@@ -278,3 +278,15 @@
         Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
         
 ========================
+[2022-01-12 12:46:29] 
+        Текст ошибки: Call to undefined method app\widgets\filter\Filter::setAttrs() | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\app\widgets\filter\Filter.php Строка: 32 
+        
+========================
+[2022-01-12 12:46:29] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================
+[2022-01-12 12:46:29] 
+        Текст ошибки: Страница не найдена | Файл: C:\Programming\OpenServer\domains\projectTrening\Project2OOP\vendor\luxury\core\Router.php Строка: 46 
+        
+========================

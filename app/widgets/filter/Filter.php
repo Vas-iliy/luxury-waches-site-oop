@@ -29,7 +29,6 @@ class Filter
             $this->attrs = self::getAttrs();
             $cache->set('filter_attrs', $this->attrs);
         }
-        $this->setAttrs($_SESSION['filter_active']);
         echo $this->getHtml();
     }
 
@@ -84,83 +83,6 @@ class Filter
             }
         }
         return count($data);
-    }
-
-
-
-    public static function getFiltersWithProducts($products) {
-        if (!empty($products)) {
-            $idProducts = '';
-            foreach ($products as $product) {
-                $idProducts .= $product['id'] . ',';
-            }
-            $idProducts = rtrim($idProducts, ',');
-            $filterId = \R::getAssoc("SELECT id_attr FROM attribute_product WHERE id_product IN ($idProducts)");
-            $filterId = array_unique(array_merge($filterId, Filter::getNewAttr()));
-            return $filterId;
-        }
-
-        return null;
-    }
-
-    public static function getNewAttr() {
-        $filterId = self::getFilter();
-        if (!empty($filterId)) {
-            $filterId = explode(',', $filterId);
-            $cache = Cache::instance();
-            $attrs = $cache->get('filter_attrs');
-            $newAttrs = [];
-            $res = false; $count = 0;
-
-            foreach ($attrs as $key => $attr) {
-                if ($count < 1) {
-                    foreach ($attr as $k => $v) {
-                        if (!$res) {
-                            foreach ($filterId as $filter) {
-                                if ($filter == $k) {
-                                    $res = true;
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                    if ($res) {
-                        foreach ($attr as $k => $v) {
-                            $newAttrs[] = $k;
-                        }
-                        $res = false;
-                        $count++;
-                    }
-                }
-                else {
-                    break;
-                }
-            }
-            return $newAttrs;
-        }
-        return [];
-    }
-
-    public function setAttrs($filters) {
-        if (!empty($filters)) {
-            foreach ($this->attrs as $key => $item) {
-                foreach ($item as $id_attrs => $title) {
-                    foreach ($filters as $k => $v) {
-                        if ($id_attrs == $v) {
-                            $this->attrs[$key][$id_attrs] = [$title, ''];
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-        foreach ($this->attrs as $key => $item) {
-            foreach ($item as $id_attrs => $title) {
-                if (!is_array($title)) {
-                    $this->attrs[$key][$id_attrs] = [$title, 'disabled'];
-                }
-            }
-        }
     }
 
     public static function getPrice() {

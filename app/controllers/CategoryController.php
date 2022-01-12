@@ -34,8 +34,6 @@ class CategoryController extends AppController
         $sql_price = Filter::refactorProductsWithFilters($curr['value'])[0];
         $sql_part = Filter::refactorProductsWithFilters()[1];
 
-        $_SESSION['filter_active'] = Filter::getFiltersWithProducts(\R::find('products', "id_category IN ($ids) $sql_part"));
-
         $total = \R::count('products', "id_category IN ($ids) $sql_price $sql_part");
         $pagination = new Pagination($page, $perpage, $total);
         $start = $pagination->getStart();
